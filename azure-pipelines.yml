@@ -48,7 +48,7 @@ stages:
     - task: ArchiveFiles@2
       displayName: 'Archive files'
       inputs:
-        rootFolderOrFile: '$(System.DefaultWorkingDirectory)/Microsoft Certified: DevOps Engineer Expert (AZ-400): Build and Release Pipelines/Deploy a Node.js App to a Deployment Slot in Azure DevOps/'
+        rootFolderOrFile: '$(System.DefaultWorkingDirectory)'
         includeRootFolder: false
         archiveType: zip
         archiveFile: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
